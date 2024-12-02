@@ -7,15 +7,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="400.0" prefWidth="600.0" spacing="20.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chinbea.app.controllers.LoginController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chinbea.app.controllers.LoginController">
    <children>
-      <Label text="Log In" />
-      <TextField promptText="Username" />
-      <PasswordField promptText="Password" />
-      <Button mnemonicParsing="false" text="Log In" />
+      <Label stylesheets="@../css/login.css" text="Log In" />
+      <TextField fx:id="username" promptText="Username" styleClass="text-field" stylesheets="@../css/login.css" />
+      <PasswordField fx:id="password" promptText="Password" styleClass="text-field" stylesheets="@../css/login.css" />
+      <Button mnemonicParsing="false" onAction="#handleLogin" stylesheets="@../css/login.css" text="Log In" />
    </children>
    <padding>
-      <Insets left="50.0" right="50.0" top="50.0" bottom="50.0" />
+      <Insets left="50.0" right="50.0" top="50.0" />
    </padding>
 </VBox>

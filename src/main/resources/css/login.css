@@ -2,7 +2,6 @@
 
 .root{
 	-fx-font-family: 'Montserrat', sans-serif;
-	--fx-accent-color: #4a90e2;
 	-fx-font-size: 14px;
 }
 
@@ -15,12 +14,12 @@
 }
 
 .text-field:focused{
-	-fx-background-color: #4a90e2;
-	-fx-border-color: #fffff;
+	-fx-background-color: #ffffff;
+	-fx-border-color: #4a90e2;
 }
 .button{
 	-fx-background-color: #4a90e2;
-	-fx-text-fill: #fffff;
+	-fx-text-fill: #ffffff;
 	-fx-border-radius: 5px;
 	-fx-padding: 10px 20px;
 	-fx-cursor: hand;
